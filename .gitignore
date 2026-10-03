@@ -1,0 +1,11 @@
+# Go 编译产物
+*.exe
+*.test
+*.out
+my-admin-server.exe
+
+# 依赖目录
+vendor/
+
+# 编辑器
+.vscode/
