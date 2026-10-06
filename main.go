@@ -38,7 +38,9 @@ func main() {
 		auth.POST("/upload/chunk", handler.UploadChunk)
 		auth.GET("/upload/check", handler.CheckChunks)
 		auth.POST("/upload/merge", handler.MergeChunks)
+
 	}
+	r.GET("/ws/chat", handler.ChatWS)
 
 	// ── 第 4 步：启动服务 ──
 	// Run(":3000")：监听 3000 端口（":3000" 表示监听所有网卡的 3000 端口）

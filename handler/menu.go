@@ -46,6 +46,8 @@ func GetMenuList(c *gin.Context) {
 			"meta": gin.H{"title": "分片上传演示", "icon": "Upload"}},
 		{"path": "/dashboard", "name": "dashboard", "component": "dashboard/index",
 			"meta": gin.H{"title": "数据可视化", "icon": "TrendCharts"}},
+		{"path": "/chat", "name": "chat", "component": "chat/index",
+			"meta": gin.H{"title": "WebSocket聊天室", "icon": "ChatDotRound"}},
 	}
 
 	c.JSON(http.StatusOK, gin.H{"code": 200, "data": menus, "msg": "success"})
